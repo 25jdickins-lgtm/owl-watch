@@ -5,21 +5,33 @@
     <title>Owl Watch Live Ranks</title>
     <style>
         body {
-            background-color: #121212;
+            /* Sets your barn owl photo as the full screen background */
+            background-image: url("Screenshot 2026-10-17 12.06.32 PM.png");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
             padding-top: 50px;
+            margin: 0;
+            height: 100vh;
         }
         .container {
-            border: 2px solid #333;
+            /* Semi-transparent dark box so you can read the text over the image */
+            border: 2px solid rgba(255, 255, 255, 0.1);
             padding: 30px;
             display: inline-block;
-            border-radius: 10px;
-            background-color: #1e1e1e;
+            border-radius: 15px;
+            background-color: rgba(30, 30, 30, 0.85);
+            backdrop-filter: blur(5px);
+            margin-top: 5vh;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
         }
-        h1 { color: #ff9900; }
-        .stat { font-size: 24px; margin: 15px 0; }
+        h1 { color: #ff9900; margin-top: 0; }
+        .stat { font-size: 24px; margin: 15px 0; font-weight: bold; }
     </style>
 </head>
 <body>
