@@ -64,24 +64,25 @@ setInterval(() => {
         <div id="rankDisplay" class="stat">Rank: Beginner</div>
     </div>
 
-    <script>
-        let secondsSpent = 0;
-        setInterval(() => {
-            secondsSpent++;
-            document.getElementById("timerDisplay").innerText = "Time: " + secondsSpent + "s";
-            
-            let rank = "Beginner";
-            if (secondsSpent >= 10000) rank = "The Owl Himself 🦉";
-            else if (secondsSpent >= 1000) rank = "Supreme Master";
-            else if (secondsSpent >= 100) rank = "The God";
-            else if (secondsSpent >= 50) rank = "Master";
-            else if (secondsSpent >= 30) rank = "Hunter";
-            else if (secondsSpent >= 20) rank = "Observer";
-            else if (secondsSpent >= 10) rank = "Spectator";
+<script>
+    let secondsSpent = 0;
+    setInterval(() => {
+        secondsSpent++;
+        document.getElementById("timerDisplay").innerText = "Time: " + secondsSpent + "s";
+        
+        let rank = "Beginner";
+        if (secondsSpent >= 10000) rank = "The Owl Himself 🦉";
+        else if (secondsSpent >= 1000) rank = "Supreme Master";
+        else if (secondsSpent >= 100) rank = "The God";
+        else if (secondsSpent >= 50) rank = "Master";
+        else if (secondsSpent >= 30) rank = "Hunter";
+        else if (secondsSpent >= 20) rank = "Observer";
+        else if (secondsSpent >= 10) rank = "Spectator";
 
-            document.getElementById("rankDisplay").innerText = "Rank: " + rank;
-        }, 1000);
-    </script>
+        document.getElementById("rankDisplay").innerText = "Rank: " + rank;
+    }, 1000);
+</script>
+
 
 </body>
 </html>
