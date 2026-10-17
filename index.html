@@ -29,25 +29,6 @@
         }
         h1 { color: #ff9900; margin-top: 0; }
         .stat { font-size: 24px; margin: 15px 0; font-weight: bold; }
-        
-        /* Music Control Button Styling */
-        .music-btn {
-            background-color: #ff9900;
-            color: black;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 20px;
-            cursor: pointer;
-            margin-top: 15px;
-            transition: transform 0.2s, background-color 0.2s;
-            box-shadow: 0 4px 15px rgba(255, 153, 0, 0.4);
-        }
-        .music-btn:hover {
-            background-color: #ffb84d;
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
@@ -56,16 +37,7 @@
         <h1>🦉 Owl Watch Room</h1>
         <div id="timerDisplay" class="stat">Time: 0s</div>
         <div id="rankDisplay" class="stat">Rank: Beginner</div>
-        
-        <!-- Interactive Music Button -->
-        <button id="musicButton" class="music-btn" onclick="toggleMusic()">🎵 Play Music</button>
     </div>
-
-    <!-- Hidden audio element streaming a clean retro lofi beat -->
-  <audio id="bgMusic" loop src="music.mp3"></audio>
-
-
-
 
     <script>
         let secondsSpent = 0;
@@ -84,20 +56,6 @@
 
             document.getElementById("rankDisplay").innerText = "Rank: " + rank;
         }, 1000);
-
-        // Music toggle functionality
-        const music = document.getElementById("bgMusic");
-        const button = document.getElementById("musicButton");
-
-        function toggleMusic() {
-            if (music.paused) {
-                music.play();
-                button.innerText = "⏸️ Pause Music";
-            } else {
-                music.pause();
-                button.innerText = "🎵 Play Music";
-            }
-        }
     </script>
 
 </body>
