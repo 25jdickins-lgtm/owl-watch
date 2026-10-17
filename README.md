@@ -1,3 +1,3 @@
 # 🦉 Owl Watch Game
 
-![Barn Owl](image_6und0H.png)
+![Barn Owl](Screenshot 2026-10-17 12.06.32 PM.png)
